@@ -15,7 +15,7 @@ class CreateSizesTable extends Migration
     {
         Schema::create('sizes', function (Blueprint $table) {
             $table->increments('id_Sizes');
-            $table->string('name_Sizes');
+            $table->string('name_Sizes')->unique();
             $table->string('label_Sizes');
             $table->timestamps();
         });

@@ -15,12 +15,18 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id_Prod');
+
             $table->string('name_Prod');
+
             $table->integer('price_Prod');
 
-            $table->string('size_Prod')->references('name_Sizes')->on('sizes');
+            $table->string('size_Prod')->unique();
+            $table->foreign('size_Prod')->references('name_Sizes')->on('sizes')->onUpdate('cascade')
+                ->onDelete('cascade');
 
-            $table->string('cat_Prod')->references('name_Cat')->on('categories');
+            $table->string('cat_Prod')->unique();
+            $table->foreign('cat_Prod')->references('name_Cat')->on('categories')->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

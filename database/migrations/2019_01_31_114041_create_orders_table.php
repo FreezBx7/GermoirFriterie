@@ -20,12 +20,16 @@ class CreateOrdersTable extends Migration
             $table->string('comments_Orders');
             $table->integer('quantity_Orders');
 
-            $table->string('name_Bakings_Orders')->references('name_Baking')->on('bakings');
+            $table->string('name_Bakings_Orders')->unique();
+            $table->foreign('name_Bakings_Orders')->references('name_Bakings')->on('bakings')->onUpdate('cascade')
+                ->onDelete('cascade');
 
             $table->integer('id_ExtrasLists_Orders')->unsigned();
             $table->foreign('id_ExtrasLists_Orders')->references('id_Extras')->on('extras_lists');
 
-            $table->string('name_Presta_Orders')->references('name_Presta')->on('prestations');
+            $table->string('name_Presta_Orders')->unique();
+            $table->foreign('name_Presta_Orders')->references('name_Presta')->on('prestations')->onUpdate('cascade')
+                ->onDelete('cascade');
 
             $table->float('total_price_Orders');
 

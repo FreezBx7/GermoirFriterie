@@ -15,7 +15,7 @@ class CreateBakingsTable extends Migration
     {
         Schema::create('bakings', function (Blueprint $table) {
             $table->increments('id_Bakings');
-            $table->string('name_Bakings');
+            $table->string('name_Bakings')->unique();
             $table->string('label_Bakings');
             $table->timestamps();
         });

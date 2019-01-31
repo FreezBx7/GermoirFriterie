@@ -15,7 +15,7 @@ class CreatePrestationsTable extends Migration
     {
         Schema::create('prestations', function (Blueprint $table) {
             $table->increments('id_Presta');
-            $table->string('name_Presta');
+            $table->string('name_Presta')->unique();
             $table->timestamps();
         });
     }
