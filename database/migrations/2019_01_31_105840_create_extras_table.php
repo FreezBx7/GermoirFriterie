@@ -15,7 +15,7 @@ class CreateExtrasTable extends Migration
     {
         Schema::create('extras', function (Blueprint $table) {
             $table->increments('id_Extras');
-            $table->string('name_Extras');
+            $table->string('name_Extras', 250);
             $table->timestamps();
         });
     }
