@@ -6,12 +6,12 @@ Une application de prise de commande, pour moderniser une friterie
 
 Le projet est en laravel 5 et Vue Js 3
 
-### Prerequisites
+### Prérequis
 
 Vous aurez besoin de NodeJs, MySql, Composer
 
 
-### Installing
+### Installer
 
 - Copiez le fichier dans un dossier
 
