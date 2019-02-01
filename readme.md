@@ -1,17 +1,17 @@
-# Application LeGermoir Friterie
+# 🦄 Application LeGermoir Friterie
 
 Une application de prise de commande, pour moderniser une friterie
 
-## Pour Commencer
+##  🦄 Pour Commencer
 
 Le projet est en laravel 5 et Vue Js 3
 
-### Prérequis
+### 🦄🦄 Prérequis
 
 Vous aurez besoin de NodeJs, MySql, Composer
 
 
-### Installer
+### 🦄🦄🦄 Installer
 
 - Copiez le fichier dans un dossier
 
@@ -35,7 +35,7 @@ Dans le projet, renomez le fichier .env.exemple en .env, et on genere une clef :
 php artisan key:generate
 ```
 
-### Installation de la base de donnée
+### 🦄🦄🦄🦄 Installation de la base de donnée
 
 Créez une base de donnée. 
 Dans le fichier .env modifiez ces elements :
@@ -56,7 +56,7 @@ php artisan migrate
 php artisan db:seed
 ```
 
-### Lancer la machine de guerre
+### 🦄🦄🦄 Lancer la machine de guerre 🦄🦄🦄
 
 Pour lancer le projet il suffit de taper ces commandes :
 
@@ -68,5 +68,5 @@ php artisan serv
 ## Auteurs
 
 * **Cyriaque DIEVART** 
-* **Cécile CROCHON**
+* **🦄🦄 Cécile CROCHON**
 
