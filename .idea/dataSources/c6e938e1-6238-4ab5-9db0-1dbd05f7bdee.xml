@@ -1140,13 +1140,13 @@
     </column>
     <column id="287" parent="277" name="name_Bakings">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="277" name="label_Bakings">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1160,308 +1160,398 @@
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="291" parent="277" name="PRIMARY">
+    <index id="291" parent="277" name="bakings_name_bakings_unique">
+      <ColNames>name_Bakings</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="292" parent="277" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_Bakings</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="292" parent="278" name="id_Cat">
+    <key id="293" parent="277" name="bakings_name_bakings_unique">
+      <ColNames>name_Bakings</ColNames>
+      <UnderlyingIndexName>bakings_name_bakings_unique</UnderlyingIndexName>
+    </key>
+    <column id="294" parent="278" name="id_Cat">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="278" name="name_Cat">
+    <column id="295" parent="278" name="name_Cat">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="278" name="created_at">
+    <column id="296" parent="278" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="278" name="updated_at">
+    <column id="297" parent="278" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="296" parent="278" name="PRIMARY">
+    <index id="298" parent="278" name="categories_name_cat_unique">
+      <ColNames>name_Cat</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="299" parent="278" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_Cat</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="297" parent="279" name="id_Extras">
+    <key id="300" parent="278" name="categories_name_cat_unique">
+      <ColNames>name_Cat</ColNames>
+      <UnderlyingIndexName>categories_name_cat_unique</UnderlyingIndexName>
+    </key>
+    <column id="301" parent="279" name="id_Extras">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="279" name="name_Extras">
+    <column id="302" parent="279" name="name_Extras">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="279" name="created_at">
+    <column id="303" parent="279" name="price_Extras">
       <Position>3</Position>
-      <DataType>timestamp|0s</DataType>
+      <DataType>double(8,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="279" name="updated_at">
+    <column id="304" parent="279" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="301" parent="279" name="PRIMARY">
+    <column id="305" parent="279" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="306" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_Extras</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="302" parent="280" name="id_ExtrasLists">
+    <column id="307" parent="280" name="id_ExtrasLists">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="280" name="id_Extras">
+    <column id="308" parent="280" name="id_Extras">
       <Position>2</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="280" name="created_at">
+    <column id="309" parent="280" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="280" name="updated_at">
+    <column id="310" parent="280" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="306" parent="280" name="extras_lists_id_extras_foreign">
+    <index id="311" parent="280" name="extras_lists_id_extras_foreign">
       <ColNames>id_Extras</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="307" parent="280" name="extras_lists_id_extras_foreign">
+    <foreign-key id="312" parent="280" name="extras_lists_id_extras_foreign">
       <ColNames>id_Extras</ColNames>
       <RefSchemaName>germoir</RefSchemaName>
       <RefTableName>extras</RefTableName>
       <RefColNames>id_extras</RefColNames>
     </foreign-key>
-    <column id="308" parent="281" name="id">
+    <column id="313" parent="281" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="281" name="migration">
+    <column id="314" parent="281" name="migration">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="281" name="batch">
+    <column id="315" parent="281" name="batch">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="311" parent="281" name="PRIMARY">
+    <key id="316" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="312" parent="282" name="id_Orders">
+    <column id="317" parent="282" name="id_Orders">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="282" name="id_Prod_Orders">
+    <column id="318" parent="282" name="id_Prod_Orders">
       <Position>2</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="282" name="comments_Orders">
+    <column id="319" parent="282" name="comments_Orders">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="282" name="quantity_Orders">
+    <column id="320" parent="282" name="quantity_Orders">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="282" name="name_Bakings_Orders">
+    <column id="321" parent="282" name="name_Bakings_Orders">
       <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="282" name="id_ExtrasLists_Orders">
+    <column id="322" parent="282" name="id_ExtrasLists_Orders">
       <Position>6</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="282" name="name_Presta_Orders">
+    <column id="323" parent="282" name="name_Presta_Orders">
       <Position>7</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="282" name="total_price_Orders">
+    <column id="324" parent="282" name="total_price_Orders">
       <Position>8</Position>
       <DataType>double(8,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="282" name="created_at">
+    <column id="325" parent="282" name="created_at">
       <Position>9</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="321" parent="282" name="updated_at">
+    <column id="326" parent="282" name="updated_at">
       <Position>10</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="322" parent="282" name="orders_id_prod_orders_foreign">
+    <index id="327" parent="282" name="orders_id_prod_orders_foreign">
       <ColNames>id_Prod_Orders</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="323" parent="282" name="orders_id_extraslists_orders_foreign">
+    <index id="328" parent="282" name="orders_name_bakings_orders_foreign">
+      <ColNames>name_Bakings_Orders</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="329" parent="282" name="orders_id_extraslists_orders_foreign">
       <ColNames>id_ExtrasLists_Orders</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="324" parent="282" name="orders_id_prod_orders_foreign">
+    <index id="330" parent="282" name="orders_name_presta_orders_foreign">
+      <ColNames>name_Presta_Orders</ColNames>
+      <Type>btree</Type>
+    </index>
+    <foreign-key id="331" parent="282" name="orders_id_prod_orders_foreign">
       <ColNames>id_Prod_Orders</ColNames>
       <RefSchemaName>germoir</RefSchemaName>
       <RefTableName>products</RefTableName>
       <RefColNames>id_prod</RefColNames>
     </foreign-key>
-    <foreign-key id="325" parent="282" name="orders_id_extraslists_orders_foreign">
+    <foreign-key id="332" parent="282" name="orders_name_bakings_orders_foreign">
+      <ColNames>name_Bakings_Orders</ColNames>
+      <RefSchemaName>germoir</RefSchemaName>
+      <RefTableName>bakings</RefTableName>
+      <RefColNames>name_bakings</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="333" parent="282" name="orders_id_extraslists_orders_foreign">
       <ColNames>id_ExtrasLists_Orders</ColNames>
       <RefSchemaName>germoir</RefSchemaName>
       <RefTableName>extras_lists</RefTableName>
       <RefColNames>id_extras</RefColNames>
     </foreign-key>
-    <column id="326" parent="283" name="id_Presta">
+    <foreign-key id="334" parent="282" name="orders_name_presta_orders_foreign">
+      <ColNames>name_Presta_Orders</ColNames>
+      <RefSchemaName>germoir</RefSchemaName>
+      <RefTableName>prestations</RefTableName>
+      <RefColNames>name_presta</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="335" parent="283" name="id_Presta">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="283" name="name_Presta">
+    <column id="336" parent="283" name="name_Presta">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="283" name="created_at">
+    <column id="337" parent="283" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="283" name="updated_at">
+    <column id="338" parent="283" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="330" parent="283" name="PRIMARY">
+    <index id="339" parent="283" name="prestations_name_presta_unique">
+      <ColNames>name_Presta</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="340" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_Presta</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="331" parent="284" name="id_Prod">
+    <key id="341" parent="283" name="prestations_name_presta_unique">
+      <ColNames>name_Presta</ColNames>
+      <UnderlyingIndexName>prestations_name_presta_unique</UnderlyingIndexName>
+    </key>
+    <column id="342" parent="284" name="id_Prod">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="332" parent="284" name="name_Prod">
+    <column id="343" parent="284" name="name_Prod">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="284" name="price_Prod">
+    <column id="344" parent="284" name="price_Prod">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>double(8,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="284" name="size_Prod">
+    <column id="345" parent="284" name="size_Prod">
       <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="284" name="cat_Prod">
+    <column id="346" parent="284" name="cat_Prod">
       <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="284" name="created_at">
+    <column id="347" parent="284" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="284" name="updated_at">
+    <column id="348" parent="284" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="338" parent="284" name="PRIMARY">
+    <index id="349" parent="284" name="products_size_prod_foreign">
+      <ColNames>size_Prod</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="350" parent="284" name="products_cat_prod_foreign">
+      <ColNames>cat_Prod</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="351" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_Prod</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="339" parent="285" name="id_Sizes">
+    <foreign-key id="352" parent="284" name="products_size_prod_foreign">
+      <ColNames>size_Prod</ColNames>
+      <RefSchemaName>germoir</RefSchemaName>
+      <RefTableName>sizes</RefTableName>
+      <RefColNames>name_sizes</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="353" parent="284" name="products_cat_prod_foreign">
+      <ColNames>cat_Prod</ColNames>
+      <RefSchemaName>germoir</RefSchemaName>
+      <RefTableName>categories</RefTableName>
+      <RefColNames>name_cat</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="354" parent="285" name="id_Sizes">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="285" name="name_Sizes">
+    <column id="355" parent="285" name="name_Sizes">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="285" name="label_Sizes">
+    <column id="356" parent="285" name="label_Sizes">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="285" name="created_at">
+    <column id="357" parent="285" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="285" name="updated_at">
+    <column id="358" parent="285" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="344" parent="285" name="PRIMARY">
+    <index id="359" parent="285" name="sizes_name_sizes_unique">
+      <ColNames>name_Sizes</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="360" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_Sizes</ColNames>
       <Primary>1</Primary>
+    </key>
+    <key id="361" parent="285" name="sizes_name_sizes_unique">
+      <ColNames>name_Sizes</ColNames>
+      <UnderlyingIndexName>sizes_name_sizes_unique</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

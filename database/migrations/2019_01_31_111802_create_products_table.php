@@ -18,13 +18,13 @@ class CreateProductsTable extends Migration
 
             $table->string('name_Prod', 50);
 
-            $table->integer('price_Prod');
+            $table->float('price_Prod');
 
-            $table->string('size_Prod', 50)->unique();
+            $table->string('size_Prod', 50);
             $table->foreign('size_Prod')->references('name_Sizes')->on('sizes')->onUpdate('cascade')
                 ->onDelete('cascade');
 
-            $table->string('cat_Prod', 50)->unique();
+            $table->string('cat_Prod', 50);
             $table->foreign('cat_Prod')->references('name_Cat')->on('categories')->onUpdate('cascade')
                 ->onDelete('cascade');
             $table->timestamps();
