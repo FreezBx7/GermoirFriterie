@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b49c7eb-49c4-472b-8411-fffaf8b3a8dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c6e938e1-6238-4ab5-9db0-1dbd05f7bdee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c6e938e1-6238-4ab5-9db0-1dbd05f7bdee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Prestation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Prestation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_105840_create_extras_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_105840_create_extras_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_111802_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_111802_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_114041_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_114041_create_orders_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_31_111802_create_products_table.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -105,16 +99,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
+            <state relative-caret-position="330">
+              <caret line="1040" lean-forward="true" selection-start-line="1040" selection-end-line="1040" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="das://c6e938e1-6238-4ab5-9db0-1dbd05f7bdee/schema/germoir/table/products">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -364,12 +358,12 @@
       <updated>1548852419012</updated>
       <workItem from="1548852421469" duration="4709000" />
       <workItem from="1548918681768" duration="19509000" />
-      <workItem from="1549005505360" duration="7333000" />
+      <workItem from="1549005505360" duration="7605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31551000" />
+    <option name="totallyTimeSpent" value="31823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -575,24 +569,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://c6e938e1-6238-4ab5-9db0-1dbd05f7bdee/schema/germoir/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_31_111802_create_products_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c6e938e1-6238-4ab5-9db0-1dbd05f7bdee/schema/germoir/table/products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="330">
+          <caret line="1040" lean-forward="true" selection-start-line="1040" selection-end-line="1040" />
         </state>
       </provider>
     </entry>
