@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import categorys from '../../utils/categories';
+import categories from '../../utils/categories';
 import Navigation from './views/Navigation/Navigation.vue';
 import Products from './views/Products/Products.vue';
 import PRODUCTS from '../../utils/products';
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      categorys,
+      categories,
       category: null,
       productList: null,
     };
