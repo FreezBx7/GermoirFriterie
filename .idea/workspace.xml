@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b49c7eb-49c4-472b-8411-fffaf8b3a8dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_105726_create_sizes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_105726_create_sizes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_105840_create_extras_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_105840_create_extras_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_110531_create_prestations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_110531_create_prestations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_111316_create_bakings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_111316_create_bakings_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_111506_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_111506_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_111802_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_111802_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_112832_create_extras_lists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_112832_create_extras_lists_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_01_31_114041_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_01_31_114041_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-    </list>
+    <list default="true" id="6b49c7eb-49c4-472b-8411-fffaf8b3a8dd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,58 +290,6 @@
               <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
               <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GermoirFriterie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GermoirFriterie" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -407,16 +342,15 @@
       <updated>1548852419012</updated>
       <workItem from="1548852421469" duration="4709000" />
       <workItem from="1548918681768" duration="19509000" />
-      <workItem from="1549005505360" duration="18642000" />
+      <workItem from="1549005505360" duration="19406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42860000" />
+    <option name="totallyTimeSpent" value="43624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20604026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
