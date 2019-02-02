@@ -12,10 +12,10 @@ class CategoryTableSeeder extends Seeder
     public function run()
     {
         DB::table('categories')->insert([
-            'name_Cat' => 'Viande_Chaud'
+            'name_Cat' => 'Viande Chaude'
         ]);
         DB::table('categories')->insert([
-            'name_Cat' => 'Viande_Froid'
+            'name_Cat' => 'Viande Froide'
         ]);
         DB::table('categories')->insert([
             'name_Cat' => 'Burgers'
