@@ -158,6 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -195,6 +196,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     console.log('menu composition');
+    console.log('prout at created');
   }
 });
 
@@ -1512,7 +1514,7 @@ var render = function() {
       _c("navigation", { on: { category: _vm.myfonct } }),
       _vm._v(" "),
       _c("products", { attrs: { products: _vm.productList } }),
-      _vm._v(" "),
+      _vm._v("\n    hello\n  "),
       _c("router-view", { key: _vm.$route.fullPath })
     ],
     1
@@ -16188,8 +16190,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Cyriaque\Desktop\AppLeGermoir\test6\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Cyriaque\Desktop\AppLeGermoir\test6\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/cyriaque/Bureau/Germoir/GermoirFriterie/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/cyriaque/Bureau/Germoir/GermoirFriterie/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
