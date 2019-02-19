@@ -2,6 +2,7 @@
   <div id="MenuComposition">
     <navigation @category="myfonct"></navigation>
     <products :products="productList"></products>
+      hello
     <router-view :key="$route.fullPath"></router-view>
   </div>
 </template>
@@ -43,6 +44,7 @@ export default {
   },
   created() {
     console.log('menu composition');
+    console.log('prout at created');
   },
 };
 </script>
