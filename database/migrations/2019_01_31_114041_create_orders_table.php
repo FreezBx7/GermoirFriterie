@@ -14,7 +14,7 @@ class CreateOrdersTable extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->integer('id_Orders');
+            $table->integer('id');
             $table->integer('id_Prod_Orders')->unsigned();
             $table->foreign('id_Prod_Orders')->references('id')->on('products');
             $table->string('comments_Orders', 50);
