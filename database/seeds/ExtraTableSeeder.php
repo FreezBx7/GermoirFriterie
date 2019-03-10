@@ -12,48 +12,43 @@ class ExtraTableSeeder extends Seeder
     public function run()
     {
         DB::table('extras')->insert([
-            'name_Extras' => 'Bacon',
-            'price_Extras' => 0.30
+            'name' => 'Bacon',
+            'price' => 0.30
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => 'Cheddar',
-            'price_Extras' => 0.50
+            'name' => 'Cheddar',
+            'price' => 0.50
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => 'Maroilles',
-            'price_Extras' => 0.80
+            'name' => 'Maroilles',
+            'price' => 0.80
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => 'Maroilles',
-            'price_Extras' => 0.80
+            'name' => 'Salade',
+            'price' => 0.00
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => 'Salade',
-            'price_Extras' => 0.00
+            'name' => 'Tomates',
+            'price' => 0.00
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => 'Tomates',
-            'price_Extras' => 0.00
+            'name' => 'Oignons frits',
+            'price' => 0.00
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => 'Oignons frits',
-            'price_Extras' => 0.00
+            'name' => "Confit d'oignon",
+            'price' => 0.00
         ]);
 
         DB::table('extras')->insert([
-            'name_Extras' => "Confit d'oignon",
-            'price_Extras' => 0.00
-        ]);
-
-        DB::table('extras')->insert([
-            'name_Extras' => 'Cornichon',
-            'price_Extras' => 0.00
+            'name' => 'Cornichon',
+            'price' => 0.00
         ]);
     }
 }

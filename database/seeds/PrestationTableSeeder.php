@@ -12,10 +12,10 @@ class PrestationTableSeeder extends Seeder
     public function run()
     {
         DB::table('prestations')->insert([
-            'name_Presta' => 'Sur Place'
+            'name' => 'Sur Place'
         ]);
         DB::table('prestations')->insert([
-            'name_Presta' => 'A Emporter'
+            'name' => 'A Emporter'
         ]);
     }
 }

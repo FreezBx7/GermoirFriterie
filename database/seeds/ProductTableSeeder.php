@@ -12,912 +12,912 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-            'name_Prod' => 'Saucisse',
-            'price_Prod' => 1.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Saucisse',
+            'price' => 1.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Saucisse',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Saucisse',
+            'price' => 3.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Saucisse',
-            'price_Prod' => 5.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Saucisse',
+            'price' => 5.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Merguez',
-            'price_Prod' => 1.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Merguez',
+            'price' => 1.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Merguez',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Merguez',
+            'price' => 3.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Merguez',
-            'price_Prod' => 5.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Merguez',
+            'price' => 5.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Fricadelle',
-            'price_Prod' => 1.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Fricadelle',
+            'price' => 1.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Fricadelle',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Fricadelle',
+            'price' => 3.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Fricadelle',
-            'price_Prod' => 5.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Fricadelle',
+            'price' => 5.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Boulette',
-            'price_Prod' => 1.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Boulette',
+            'price' => 1.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Boulette',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Boulette',
+            'price' => 3.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Boulette',
-            'price_Prod' => 5.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Boulette',
+            'price' => 5.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Mexicanos',
-            'price_Prod' => 2.30,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Mexicanos',
+            'price' => 2.30,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Mexicanos',
-            'price_Prod' => 3.50,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Mexicanos',
+            'price' => 3.50,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Mexicanos',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Mexicanos',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poulycroc',
-            'price_Prod' => 2.30,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Poulycroc',
+            'price' => 2.30,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poulycroc',
-            'price_Prod' => 3.50,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Poulycroc',
+            'price' => 3.50,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poulycroc',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Poulycroc',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cervelas',
-            'price_Prod' => 2.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Cervelas',
+            'price' => 2.50,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cervelas',
-            'price_Prod' => 3.70,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Cervelas',
+            'price' => 3.70,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cervelas',
-            'price_Prod' => 5.70,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Cervelas',
+            'price' => 5.70,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cervelas',
-            'price_Prod' => 2.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Cervelas',
+            'price' => 2.50,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cervelas',
-            'price_Prod' => 3.70,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Cervelas',
+            'price' => 3.70,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cervelas',
-            'price_Prod' => 5.70,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Cervelas',
+            'price' => 5.70,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Boeuf',
-            'price_Prod' => 2.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Boeuf',
+            'price' => 2.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Boeuf',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Boeuf',
+            'price' => 4.20,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Boeuf',
-            'price_Prod' => 6.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Boeuf',
+            'price' => 6.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Poulet',
-            'price_Prod' => 2.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Poulet',
+            'price' => 2.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Poulet',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Poulet',
+            'price' => 4.20,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Poulet',
-            'price_Prod' => 6.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Poulet',
+            'price' => 6.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Provencale',
-            'price_Prod' => 2.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Provencale',
+            'price' => 2.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Provencale',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Provencale',
+            'price' => 4.20,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brochette Provencale',
-            'price_Prod' => 6.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Brochette Provencale',
+            'price' => 6.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Grizzly',
-            'price_Prod' => 2.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Grizzly',
+            'price' => 2.90,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Grizzly',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Grizzly',
+            'price' => 4.20,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Grizzly',
-            'price_Prod' => 6.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Grizzly',
+            'price' => 6.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Steak',
-            'price_Prod' => 2.80,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Steak',
+            'price' => 2.80,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Steak',
-            'price_Prod' => 3.50,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Steak',
+            'price' => 3.50,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Steak',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Steak',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Steak Boucher',
-            'price_Prod' => 3.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Steak Boucher',
+            'price' => 3.50,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Steak Boucher',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Steak Boucher',
+            'price' => 4.20,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Steak Boucher',
-            'price_Prod' => 6.20,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Steak Boucher',
+            'price' => 6.20,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Nuggets',
-            'price_Prod' => 0.70,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Nuggets',
+            'price' => 0.70,
+            'size' => 'Seul',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Nuggets',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Nuggets',
+            'price' => 4.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Nuggets',
-            'price_Prod' => 5.70,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Chaude'
+            'name' => 'Nuggets',
+            'price' => 5.70,
+            'size' => 'Americain',
+            'cat' => 'Viande Chaude'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jambon',
-            'price_Prod' => 2.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Jambon',
+            'price' => 2.00,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jambon',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Jambon',
+            'price' => 3.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jambon',
-            'price_Prod' => 5.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Jambon',
+            'price' => 5.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cheddar',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Cheddar',
+            'price' => 3.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cheddar',
-            'price_Prod' => 5.00,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Cheddar',
+            'price' => 5.00,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jambon & Cheddar',
-            'price_Prod' => 2.40,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Jambon & Cheddar',
+            'price' => 2.40,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jambon & Cheddar',
-            'price_Prod' => 3.40,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Jambon & Cheddar',
+            'price' => 3.40,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jambon & Cheddar',
-            'price_Prod' => 5.40,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Jambon & Cheddar',
+            'price' => 5.40,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Filet Americain',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Filet Americain',
+            'price' => 4.00,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Filet Americain',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Filet Americain',
+            'price' => 4.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Filet Americain',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Filet Americain',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Crabe',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Crabe',
+            'price' => 4.00,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Crabe',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Crabe',
+            'price' => 4.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Crabe',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Crabe',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Thon',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Thon',
+            'price' => 4.00,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Thon',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Thon',
+            'price' => 4.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Thon',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Thon',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poulet',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Poulet',
+            'price' => 4.00,
+            'size' => 'Seul',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poulet',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Poulet',
+            'price' => 4.00,
+            'size' => 'Sandwich',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poulet',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Viande Froide'
+            'name' => 'Poulet',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Viande Froide'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Landasien',
-            'price_Prod' => 7.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Landasien',
+            'price' => 7.00,
+            'size' => 'Sandwich',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Landasien',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Landasien',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Burger',
-            'price_Prod' => 7.00,
-            'size_Prod' => 'Sandwich',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Burger',
+            'price' => 7.00,
+            'size' => 'Sandwich',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Burger',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Americain',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Burger',
+            'price' => 5.50,
+            'size' => 'Americain',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Croque Monsieur',
-            'price_Prod' => 2.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Individuels'
+            'name' => 'Croque Monsieur',
+            'price' => 2.50,
+            'size' => 'Seul',
+            'cat' => 'Individuels'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Donut Poulet Fromage',
-            'price_Prod' => 2.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Individuels'
+            'name' => 'Donut Poulet Fromage',
+            'price' => 2.00,
+            'size' => 'Seul',
+            'cat' => 'Individuels'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cheese Crack',
-            'price_Prod' => 2.30,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Individuels'
+            'name' => 'Cheese Crack',
+            'price' => 2.30,
+            'size' => 'Seul',
+            'cat' => 'Individuels'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Petite Frite',
-            'price_Prod' => 2.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Individuels'
+            'name' => 'Petite Frite',
+            'price' => 2.00,
+            'size' => 'Seul',
+            'cat' => 'Individuels'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Grande Frite',
-            'price_Prod' => 2.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Individuels'
+            'name' => 'Grande Frite',
+            'price' => 2.50,
+            'size' => 'Seul',
+            'cat' => 'Individuels'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Pain Frite',
-            'price_Prod' => 2.70,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Individuels'
+            'name' => 'Pain Frite',
+            'price' => 2.70,
+            'size' => 'Seul',
+            'cat' => 'Individuels'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cheese Burger',
-            'price_Prod' => 3.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Cheese Burger',
+            'price' => 3.90,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Big Burger',
-            'price_Prod' => 4.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Big Burger',
+            'price' => 4.50,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Bicky',
-            'price_Prod' => 3.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Bicky',
+            'price' => 3.50,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Bicky Crispy',
-            'price_Prod' => 3.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Bicky Crispy',
+            'price' => 3.90,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Bicky Cheese',
-            'price_Prod' => 3.90,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Bicky Cheese',
+            'price' => 3.90,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Chicken',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Chicken',
+            'price' => 4.00,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Veggie Cheddar',
-            'price_Prod' => 4.30,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Veggie Cheddar',
+            'price' => 4.30,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Veggie Maroilles',
-            'price_Prod' => 4.60,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Burgers'
+            'name' => 'Veggie Maroilles',
+            'price' => 4.60,
+            'size' => 'Seul',
+            'cat' => 'Burgers'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Mayo',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Mayo',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Ketchup',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Ketchup',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Andalouse',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Andalouse',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Poivre',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Poivre',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Samourai',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Samourai',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Chti',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Chti',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Pitta',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Pitta',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Algerienne',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Algerienne',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Brasil',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Brasil',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
         DB::table('products')->insert([
-            'name_Prod' => 'Hannibal',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Hannibal',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Burger',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Burger',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => '3 Sauces',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => '3 Sauces',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cocktail',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Cocktail',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Curry',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Curry',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Americaine',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Americaine',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Moutarde',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Moutarde',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Picalili',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Picalili',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Provencale',
-            'price_Prod' => 0.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Sauces'
+            'name' => 'Provencale',
+            'price' => 0.50,
+            'size' => 'Seul',
+            'cat' => 'Sauces'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Nuggets',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Menu_Enfant'
+            'name' => 'Nuggets',
+            'price' => 5.50,
+            'size' => 'Seul',
+            'cat' => 'Menu_Enfant'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Fricadelle',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Menu_Enfant'
+            'name' => 'Fricadelle',
+            'price' => 5.50,
+            'size' => 'Seul',
+            'cat' => 'Menu_Enfant'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Saucisse',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Menu_Enfant'
+            'name' => 'Saucisse',
+            'price' => 5.50,
+            'size' => 'Seul',
+            'cat' => 'Menu_Enfant'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Hamburger',
-            'price_Prod' => 5.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Menu_Enfant'
+            'name' => 'Hamburger',
+            'price' => 5.50,
+            'size' => 'Seul',
+            'cat' => 'Menu_Enfant'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jupiler',
-            'price_Prod' => 2.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Jupiler',
+            'price' => 2.00,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Jupiler 0',
-            'price_Prod' => 2.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Jupiler 0',
+            'price' => 2.00,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Cuvee des troll',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Cuvee des troll',
+            'price' => 3.00,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Leffe',
-            'price_Prod' => 3.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Leffe',
+            'price' => 3.50,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Triple Karmeliet',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Triple Karmeliet',
+            'price' => 4.20,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Duvel',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Duvel',
+            'price' => 4.20,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Chouffe',
-            'price_Prod' => 4.20,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Chouffe',
+            'price' => 4.20,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Kriek',
-            'price_Prod' => 3.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Kriek',
+            'price' => 3.00,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Anosteke',
-            'price_Prod' => 4.30,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Anosteke',
+            'price' => 4.30,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Queue de Charrue',
-            'price_Prod' => 4.00,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Alcool'
+            'name' => 'Queue de Charrue',
+            'price' => 4.00,
+            'size' => 'Seul',
+            'cat' => 'Alcool'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Coca',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Coca',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Coca Zero',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Coca Zero',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Fanta Orange',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Fanta Orange',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Fanta Citron',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Fanta Citron',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Orangina',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Orangina',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Oasis Tropical',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Oasis Tropical',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Oasis Orange',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Oasis Orange',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Sprite',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Sprite',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Ice Tea',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Ice Tea',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Caprisun',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Caprisun',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Perrier',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Perrier',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Eau Plate (Plastique)',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Eau Plate (Plastique)',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Eau Gazeuse (Plastique)',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Eau Gazeuse (Plastique)',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Eau Plate (Verre)',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Eau Plate (Verre)',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
 
         DB::table('products')->insert([
-            'name_Prod' => 'Eau Gazeuse (Verre)',
-            'price_Prod' => 1.50,
-            'size_Prod' => 'Seul',
-            'cat_Prod' => 'Soft'
+            'name' => 'Eau Gazeuse (Verre)',
+            'price' => 1.50,
+            'size' => 'Seul',
+            'cat' => 'Soft'
         ]);
     }
 }

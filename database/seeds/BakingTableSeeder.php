@@ -12,28 +12,33 @@ class BakingTableSeeder extends Seeder
     public function run()
     {
         DB::table('bakings')->insert([
-            'name_Bakings' => 'Bleu',
-            'label_Bakings' => 'BL'
+            'name' => 'Bleu',
+            'meta' => 'BL'
         ]);
 
         DB::table('bakings')->insert([
-            'name_Bakings' => 'A Point',
-            'label_Bakings' => 'AP'
+            'name' => 'A Point',
+            'meta' => 'AP'
         ]);
 
         DB::table('bakings')->insert([
-            'name_Bakings' => 'Saigant',
-            'label_Bakings' => 'SG'
+            'name' => 'Saigant',
+            'meta' => 'SG'
         ]);
 
         DB::table('bakings')->insert([
-            'name_Bakings' => 'Bien cuit',
-            'label_Bakings' => 'BC'
+            'name' => 'Bien cuit',
+            'meta' => 'BC'
         ]);
 
         DB::table('bakings')->insert([
-            'name_Bakings' => 'Bien bien cuit',
-            'label_Bakings' => 'BBC'
+            'name' => 'Bien bien cuit',
+            'meta' => 'BBC'
+        ]);
+
+        DB::table('bakings')->insert([
+            'name' => 'None',
+            'meta' => ''
         ]);
     }
 }

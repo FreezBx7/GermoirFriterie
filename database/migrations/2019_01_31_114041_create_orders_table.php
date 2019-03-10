@@ -15,23 +15,23 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->integer('id');
-            $table->integer('id_Prod_Orders')->unsigned();
-            $table->foreign('id_Prod_Orders')->references('id')->on('products');
-            $table->string('comments_Orders', 50);
-            $table->integer('quantity_Orders');
+            $table->integer('idProd')->unsigned();
+            $table->foreign('idProd')->references('id')->on('products');
+            $table->string('comments', 50);
+            $table->integer('quantity');
 
-            $table->string('name_Bakings_Orders', 50);
-            $table->foreign('name_Bakings_Orders')->references('name_Bakings')->on('bakings')->onUpdate('cascade')
+            $table->string('nameBakings', 50);
+            $table->foreign('nameBakings')->references('name')->on('bakings')->onUpdate('cascade')
                 ->onDelete('cascade');
 
-            $table->integer('id_ExtrasLists_Orders')->unsigned();
-            $table->foreign('id_ExtrasLists_Orders')->references('id_Extras')->on('extras_lists');
+            $table->integer('idExtrasLists')->unsigned();
+            $table->foreign('idExtrasLists')->references('idExtras')->on('extras_lists');
 
-            $table->string('name_Presta_Orders', 50);
-            $table->foreign('name_Presta_Orders')->references('name_Presta')->on('prestations')->onUpdate('cascade')
+            $table->string('namePresta', 50);
+            $table->foreign('namePresta')->references('name')->on('prestations')->onUpdate('cascade')
                 ->onDelete('cascade');
 
-            $table->float('total_price_Orders');
+            $table->float('totalPrice');
 
             $table->timestamps();
         });

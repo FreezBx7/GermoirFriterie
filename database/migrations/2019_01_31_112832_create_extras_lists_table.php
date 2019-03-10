@@ -15,8 +15,8 @@ class CreateExtrasListsTable extends Migration
     {
         Schema::create('extras_lists', function (Blueprint $table) {
             $table->integer('id');
-            $table->integer('id_Extras')->unsigned();
-            $table->foreign('id_Extras')->references('id')->on('extras');
+            $table->integer('idExtras')->unsigned();
+            $table->foreign('idExtras')->references('id')->on('extras');
             $table->timestamps();
         });
     }

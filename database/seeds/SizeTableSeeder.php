@@ -12,16 +12,16 @@ class SizeTableSeeder extends Seeder
     public function run()
     {
         DB::table('sizes')->insert([
-            'name_Sizes' => 'Seul',
-            'label_Sizes' => ' '
+            'name' => 'Seul',
+            'meta' => ' '
         ]);
         DB::table('sizes')->insert([
-            'name_Sizes' => 'Sandwich',
-            'label_Sizes' => 'sand'
+            'name' => 'Sandwich',
+            'meta' => 'sand'
         ]);
         DB::table('sizes')->insert([
-            'name_Sizes' => 'Americain',
-            'label_Sizes' => 'USA'
+            'name' => 'Americain',
+            'meta' => 'USA'
         ]);
     }
 }
