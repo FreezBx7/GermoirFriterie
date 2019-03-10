@@ -22,3 +22,8 @@ Route::get('/product', 'ProductController@index');
 Route::get('/category', 'CategoryController@index');
 Route::post('/order', 'OrderController@store');
 Route::get('/getOrder', 'OrderController@index');
+Route::get('/baking','BakingController@index');
+Route::get('/extra','ExtraController@index');
+Route::get('/extraList','ExtraListController@index');
+Route::get('/prestation','PrestationController@index');
+Route::get('/size','SizeController@index');
