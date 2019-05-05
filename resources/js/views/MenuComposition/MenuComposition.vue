@@ -1,8 +1,9 @@
 <template>
   <div id="MenuComposition">
-    <navigation @category="myfonct"></navigation>
-    <products :products="productList"></products>
+    <navigation @category="updateNavigation"></navigation>
+    <products :products="shortList" @sendOrder="sendOrder"></products>
     <router-view :key="$route.fullPath"></router-view>
+    <p> prout </p>
   </div>
 </template>
 
@@ -10,7 +11,7 @@
 import categories from '../../utils/categories';
 import Navigation from './views/Navigation/Navigation.vue';
 import Products from './views/Products/Products.vue';
-import PRODUCTS from '../../utils/products';
+import { getProducts } from '../../services/products-service.js';
 
 export default {
   components: {
@@ -22,27 +23,52 @@ export default {
       categories,
       category: null,
       productList: null,
+      shortList: [],
     };
   },
   methods: {
-    myfonct(value) {
+    updateNavigation(value) {
       this.category = value;
       this.updateProductList();
     },
-    updateProductList() {
+    updateShortList() {
+      this.shortList = [];
+      this.productList.forEach((product, indexProd) => {
+        console.log('product & index : ', product, indexProd);
+        //If ShortList already exists
+        if (this.shortList.length > 0) {
+          this.shortList.forEach((shortListProduct, index) => {
+            // If the name of the short list product matches the current product
+            if (shortListProduct.name === product.name) {
+              shortListProduct.sizes.push({ label: product.size, id: indexProd});
+            } else if (!this.shortList[index + 1]){ // If it's the end of the array
+              this.shortList.push({name: product.name, sizes: [{ label: product.size, id: indexProd}]}); // Initialize a nexw product
+            }
+          });
+        } else {
+          this.shortList.push({name: product.name, sizes: [{ label: product.size, id: indexProd}]});
+        }
+      });
+    },
+    async updateProductList() {
       this.productList = [];
       if (this.category) {
-        for (const product in PRODUCTS) {
-          if (PRODUCTS[product].category === this.category) {
-            this.productList.push(PRODUCTS[product]);
-          }
-        }
+        const { data : productsData } = await getProducts();
+        console.log('productsData : ', productsData);
+        productsData.forEach( product => {
+          if (this.category === product.cat) {
+            this.productList.push(product);
+          }         
+        });
       }
-      console.log('product list : ', this.productList);
+      console.log('productList : ', this.productList);
+      if(this.productList.length > 0 ) {
+        this.updateShortList();
+      }
     },
-  },
-  created() {
-    console.log('menu composition');
+    sendOrder(value) {
+      console.log('sendOrder(value) : ', value);
+    }
   },
 };
 </script>

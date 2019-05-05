@@ -1,9 +1,9 @@
 export default {
   hot: {
-    name: 'Chaud',
+    name: 'Viande Chaude',
   },
   cold: {
-    name: 'Froid',
+    name: 'Viande Froide',
   },
   soft: {
     name: 'Soft',
@@ -15,12 +15,12 @@ export default {
     name: 'Burgers',
   },
   individual: {
-    name: 'Individuel',
+    name: 'Individuels',
   },
   children: {
     name: 'Menu enfant',
   },
   sauce: {
-    name: 'Sauce',
+    name: 'Sauces',
   },
 };
