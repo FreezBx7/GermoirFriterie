@@ -43,6 +43,8 @@ class OrderController extends Controller
         $id_ExtrasLists_Orders = $request->input('idExtrasLists');
         $name_Presta_Orders = $request->input('namePresta');
         $total_price_Orders = $request->input('totalPrice');
+
+        var_dump($request);
     }
 
     /**
