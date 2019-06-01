@@ -15,8 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->integer('id');
-            $table->integer('idProd')->unsigned();
-            $table->foreign('idProd')->references('id')->on('products');
+            $table->string('name');
             $table->string('comments', 50);
             $table->integer('quantity');
 
@@ -24,8 +23,6 @@ class CreateOrdersTable extends Migration
             $table->foreign('nameBakings')->references('name')->on('bakings')->onUpdate('cascade')
                 ->onDelete('cascade');
 
-            $table->integer('idExtrasLists')->unsigned();
-            $table->foreign('idExtrasLists')->references('idExtras')->on('extras_lists');
 
             $table->string('namePresta', 50);
             $table->foreign('namePresta')->references('name')->on('prestations')->onUpdate('cascade')
