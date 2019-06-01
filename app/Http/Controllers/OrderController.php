@@ -44,7 +44,7 @@ class OrderController extends Controller
         $name_Presta_Orders = $request->input('namePresta');
         $total_price_Orders = $request->input('totalPrice');
 
-        var_dump($request);
+        return var_dump($request);
     }
 
     /**
