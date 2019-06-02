@@ -1,7 +1,7 @@
 <template>
   <div id="MenuComposition">
     <navigation @category="updateNavigation"></navigation>
-    <products :products="shortList" @sendOrder="sendOrder"></products>
+    <products :products="shortList"></products>
     <router-view :key="$route.fullPath"></router-view>
     <p> prout </p>
   </div>
@@ -66,9 +66,6 @@ export default {
         this.updateShortList();
       }
     },
-    sendOrder(value) {
-      console.log('sendOrder(value) : ', value);
-    }
   },
 };
 </script>

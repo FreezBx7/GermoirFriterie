@@ -1959,10 +1959,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }
 
       return updateProductList;
-    }(),
-    sendOrder: function sendOrder(value) {
-      console.log('sendOrder(value) : ', value);
-    }
+    }()
   }
 });
 
@@ -2260,8 +2257,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_productEditor_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/productEditor.vue */ "./resources/js/views/MenuComposition/components/productEditor.vue");
-/* harmony import */ var _components_displayOrder_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/displayOrder.vue */ "./resources/js/views/MenuComposition/components/displayOrder.vue");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_productEditor_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/productEditor.vue */ "./resources/js/views/MenuComposition/components/productEditor.vue");
+/* harmony import */ var _components_displayOrder_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/displayOrder.vue */ "./resources/js/views/MenuComposition/components/displayOrder.vue");
+/* harmony import */ var _services_order_service_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../services/order-service.js */ "./resources/js/services/order-service.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 //
 //
 //
@@ -2288,6 +2294,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2312,13 +2319,44 @@ __webpack_require__.r(__webpack_exports__);
       console.log('value : ', value);
       this.order.push(value);
     },
-    valid: function valid() {
-      this.$emit('sendOrder', this.order);
-    }
+    valid: function () {
+      var _valid = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var _ref, ans;
+
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                //post order
+                console.log('this.order : ', this.order);
+                _context.next = 3;
+                return Object(_services_order_service_js__WEBPACK_IMPORTED_MODULE_3__["postOrder"])(this.order);
+
+              case 3:
+                _ref = _context.sent;
+                ans = _ref.data;
+                console.log('OK');
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function valid() {
+        return _valid.apply(this, arguments);
+      }
+
+      return valid;
+    }()
   },
   components: {
-    productEditor: _components_productEditor_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    displayOrder: _components_displayOrder_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    productEditor: _components_productEditor_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    displayOrder: _components_displayOrder_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   created: function created() {
     console.log('created products ! : ', this.products);
@@ -4332,10 +4370,7 @@ var render = function() {
     [
       _c("navigation", { on: { category: _vm.updateNavigation } }),
       _vm._v(" "),
-      _c("products", {
-        attrs: { products: _vm.shortList },
-        on: { sendOrder: _vm.sendOrder }
-      }),
+      _c("products", { attrs: { products: _vm.shortList } }),
       _vm._v(" "),
       _c("router-view", { key: _vm.$route.fullPath }),
       _vm._v(" "),
@@ -18592,6 +18627,27 @@ var axiosInstance = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
   baseURL: 'http://185.164.234.203/api/'
 });
 /* harmony default export */ __webpack_exports__["default"] = (axiosInstance);
+
+/***/ }),
+
+/***/ "./resources/js/services/order-service.js":
+/*!************************************************!*\
+  !*** ./resources/js/services/order-service.js ***!
+  \************************************************/
+/*! exports provided: postOrder */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "postOrder", function() { return postOrder; });
+/* harmony import */ var _axios_instance__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./axios-instance */ "./resources/js/services/axios-instance.js");
+
+
+function postOrder(newOrder) {
+  return _axios_instance__WEBPACK_IMPORTED_MODULE_0__["default"].post('/order', JSON.stringify(newOrder));
+}
+
+
 
 /***/ }),
 

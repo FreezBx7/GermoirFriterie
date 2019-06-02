@@ -27,6 +27,7 @@
 <script>
 import productEditor from '../../components/productEditor.vue';
 import displayOrder from '../../components/displayOrder.vue';
+import { postOrder } from '../../../../services/order-service.js';
 
 export default {
   data() {
@@ -50,8 +51,13 @@ export default {
       console.log('value : ', value);
       this.order.push(value);
     },
-    valid(){
-      this.$emit('sendOrder', this.order);
+    async valid(){
+      //post order
+      console.log('this.order : ', this.order);
+      const {
+        data: ans,
+      } = await postOrder(this.order);
+      console.log('OK');
     }
   },
   components: {
