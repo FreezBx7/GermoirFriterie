@@ -36,17 +36,53 @@ class OrderController extends Controller
     public function store(Request $request)
     {
 	$datas = $request->json()->all();
-	$order = new \App\Order;
-    $order->name = " ";
-    $order->comments = " ";
-    $order->quantity = 2;
-    $order->nameBakings = " ";
-    $order->namePresta = " ";
-    $order->extras = " ";
-    $order->totalPrice = 2;
+    $order = new \App\Order;
+    foreach($datas as $data){
+        if(isset($data['name'])){
+            $order->name = $data['name'];
+        }else{
+            $order->name = " ";
+        }
 
+        if(isset($data['comments'])){
+            $order->comments = $data['comments'];
+        }else{
+            $order->comments = " ";
+        }
 
-	$order->save();
+        if(isset($data['quantity'])){
+            $order->quantity = $data['quantity'];
+        }else{
+            $order->quantity = 0;
+        }
+
+        if(isset($data['bake'])){
+            $order->nameBaking = $data['bake'];
+        }else{
+            $order->nameBaking = " ";
+        }
+
+        if(isset($data['presta'])){
+            $order->namePresta = $data['presta'];
+        }else{
+            $order->namePresta = " ";
+        }
+
+        if(isset($data['extras'])){
+            $order->extras = serialize($data['name']);
+        }else{
+            $order->extras = " ";
+        }
+
+        if(isset($data['price'])){
+            $order->totalPrice = $data['price'];
+        }else{
+            $order->totalPrice = 0;
+        }
+        $order->save();
+    }
+    
+	
 	return $order;
 	
     }
