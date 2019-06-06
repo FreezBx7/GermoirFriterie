@@ -27,6 +27,7 @@ class CreateOrdersTable extends Migration
             $table->string('namePresta', 50);
             $table->foreign('namePresta')->references('name')->on('prestations')->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->string('extras');
 
             $table->float('totalPrice');
 
