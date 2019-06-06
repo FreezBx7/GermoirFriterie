@@ -14,7 +14,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return Order::all();
+        return unserialize(Order::all());
     }
 
     /**
@@ -36,53 +36,9 @@ class OrderController extends Controller
     public function store(Request $request)
     {
 	$datas = $request->json()->all();
-    
-    foreach($datas as $data){
-        $order = new \App\Order;
-        if(isset($data['name'])){
-            $order->name = $data['name'];
-        }else{
-            $order->name = " ";
-        }
-
-        if(isset($data['comments'])){
-            $order->comments = $data['comments'];
-        }else{
-            $order->comments = " ";
-        }
-
-        if(isset($data['quantity'])){
-            $order->quantity = $data['quantity'];
-        }else{
-            $order->quantity = 0;
-        }
-
-        if(isset($data['bake'])){
-            $order->nameBakings = $data['bake'];
-        }else{
-            $order->nameBakings = " ";
-        }
-
-        if(isset($data['presta'])){
-            $order->namePresta = $data['presta'];
-        }else{
-            $order->namePresta = " ";
-        }
-
-        if(isset($data['extras'])){
-            $order->extras = serialize($data['name']);
-        }else{
-            $order->extras = " ";
-        }
-
-        if(isset($data['price'])){
-            $order->totalPrice = $data['price'];
-        }else{
-            $order->totalPrice = 0;
-        }
-        $order->save();
-    }
-    
+    $order = new \App\Order;
+    $order->json = serialize($datas);
+    $order->save();
 	
 	return $order;
 	
