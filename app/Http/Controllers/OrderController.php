@@ -36,7 +36,7 @@ class OrderController extends Controller
     public function store(Request $request)
     {
 	$datas = $request->json()->all();
-	$order = new app\Order;
+	$order = new \App\Order;
 	
 	$order->save();
 	return $order;
