@@ -36,8 +36,9 @@ class OrderController extends Controller
     public function store(Request $request)
     {
 	$datas = $request->json()->all();
-    $order = new \App\Order;
+    
     foreach($datas as $data){
+        $order = new \App\Order;
         if(isset($data['name'])){
             $order->name = $data['name'];
         }else{
