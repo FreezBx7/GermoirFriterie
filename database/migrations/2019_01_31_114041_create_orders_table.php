@@ -15,7 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('json', 255);
+            $table->string('json', 6000000);
             $table->timestamps();
         });
     }
