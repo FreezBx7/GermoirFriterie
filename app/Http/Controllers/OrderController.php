@@ -37,7 +37,15 @@ class OrderController extends Controller
     {
 	$datas = $request->json()->all();
 	$order = new \App\Order;
-	
+    $order->name = " ";
+    $order->comments = " ";
+    $order->quantity = " ";
+    $order->nameBakings = " ";
+    $order->namePresta = " ";
+    $order->extras = " ";
+    $order->totalPrice = 2;
+
+
 	$order->save();
 	return $order;
 	
