@@ -35,17 +35,12 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        $id = $request->input('id');
-        $id_Prod_Orders = $request->input('idProd');
-        $comments_Orders = $request->input('comments');
-        $quantity_Orders = $request->input('quantity');
-        $name_Bakings_Orders = $request->input('nameBakings');
-        $id_ExtrasLists_Orders = $request->input('idExtrasLists');
-        $name_Presta_Orders = $request->input('namePresta');
-        $total_price_Orders = $request->input('totalPrice');
-
-        return $request->all();
-    
+	$datas = $request->json()->all();
+	$order = new app\Order;
+	$order->name = $datas['0']['name'];
+	$order->save();
+	return $order;
+	
     }
 
     /**
