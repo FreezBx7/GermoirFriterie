@@ -37,7 +37,7 @@ class OrderController extends Controller
     {
 	$datas = $request->json()->all();
 	$order = new app\Order;
-	$order->name = $datas['0']['name'];
+	
 	$order->save();
 	return $order;
 	
