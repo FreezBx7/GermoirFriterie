@@ -57,9 +57,9 @@ class OrderController extends Controller
         }
 
         if(isset($data['bake'])){
-            $order->nameBaking = $data['bake'];
+            $order->nameBakings = $data['bake'];
         }else{
-            $order->nameBaking = " ";
+            $order->nameBakings = " ";
         }
 
         if(isset($data['presta'])){
