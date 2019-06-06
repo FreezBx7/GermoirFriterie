@@ -18,19 +18,10 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->string('comments', 50);
             $table->integer('quantity');
-
             $table->string('nameBakings', 50);
-            $table->foreign('nameBakings')->references('name')->on('bakings')->onUpdate('cascade')
-                ->onDelete('cascade');
-
-
             $table->string('namePresta', 50);
-            $table->foreign('namePresta')->references('name')->on('prestations')->onUpdate('cascade')
-                ->onDelete('cascade');
             $table->string('extras');
-
             $table->float('totalPrice');
-
             $table->timestamps();
         });
     }
