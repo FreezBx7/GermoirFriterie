@@ -39,7 +39,7 @@ class OrderController extends Controller
 	$order = new \App\Order;
     $order->name = " ";
     $order->comments = " ";
-    $order->quantity = " ";
+    $order->quantity = 2;
     $order->nameBakings = " ";
     $order->namePresta = " ";
     $order->extras = " ";
