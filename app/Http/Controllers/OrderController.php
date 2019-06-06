@@ -14,7 +14,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return Order::all();
+        $result = unserialze($order->all());
+        return $result;
     }
 
     /**
