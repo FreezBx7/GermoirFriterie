@@ -14,8 +14,9 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $result = Order::all();
-        return $result->id;
+        $result2 = Order::with('id')->get();
+        $result = json_encode($result2);
+        return $result2;
     }
 
     /**
