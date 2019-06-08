@@ -14,9 +14,10 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $result2 = Order::with('id')->get();
-        $result = json_encode($result2);
-        return $result2;
+        $result = Order::all();
+        $id = $result[0]['id'];
+        $json = unserialize($result[0]['json']);
+        return $json;
     }
 
     /**
