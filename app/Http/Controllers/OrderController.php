@@ -15,7 +15,7 @@ class OrderController extends Controller
     public function index()
     {
         $result = Order::all();
-        return $result;
+        return $result->id;
     }
 
     /**
