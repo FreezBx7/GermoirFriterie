@@ -15,7 +15,7 @@ class OrderController extends Controller
     public function index()
     {
         $result = Order::all();
-        $json = $result[0]['json'];
+        $json = unserialize($result[0]['json']);
         $id = $result[0]['id'];
         $result2 = array('id' => $id, $json);
         return $result2;
