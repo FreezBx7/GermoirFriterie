@@ -1,7 +1,7 @@
 <template>
   <div class="Navigation">
     <div v-for="category in categories" :key="category.name">
-      <button @click="emission(category.name)">{{category.name}}</button>
+      <b-button @click="emission(category.name)">{{category.name}}</b-button>
     </div>
   </div>
 </template>
