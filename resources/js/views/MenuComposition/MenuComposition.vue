@@ -1,5 +1,5 @@
 <template>
-  <div id="MenuComposition">
+<div id="MenuComposition">  
     <navigation @category="updateNavigation"></navigation>
     <products :products="shortList"></products>
     <router-view :key="$route.fullPath"></router-view>
