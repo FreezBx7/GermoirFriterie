@@ -1,5 +1,5 @@
 <template>
-  <div class="products">
+  <div class="products col-12">
     <modal class="Modal" name="product-editor" width="70%" height="auto">
       <product-editor
       @close="$modal.hide('product-editor')"
@@ -7,19 +7,37 @@
       :product="productToEdit"
       ></product-editor>
     </modal>
-    <div v-if="products">
-      <div v-for="product in products" :key="product.name">
-        <button @click="showMore(product)">{{product.name}}</button>
-      </div>
-    </div>
-    <div>
-      <div v-if="order">
-        <div v-for="item in order" :key="item.name">
-          <display-order :product="item"></display-order>
+    <b-row>
+      <b-col cols="9">
+        <div v-if="products">
+          <b-row>
+            <div v-for="product in products" :key="product.name">
+              <b-card @click="showMore(product)" class="m-1" >
+                <b-card-text>
+                  {{product.name}}
+                </b-card-text>
+              </b-card>
+            </div>
+          </b-row>
         </div>
-      </div>
-      <button @click="valid">Valider</button>
-    </div>
+      </b-col>
+      <b-col cols="3">
+        <b-jumbotron class="text-center">
+        <div>
+          <div v-if="order">
+            <div v-for="item in order" :key="item.name">
+              <display-order :product="item"></display-order>
+            </div>
+          </div> 
+          <b-button @click="valid">Valider</b-button>
+        </div>
+        </b-jumbotron>
+      </b-col>
+    </b-row>
+    
+        
+    
+    
     
   </div>
 </template>

@@ -2,13 +2,9 @@
   <div class="Navigation">
     <div>
       <b-tabs content-class="mt-3">
-        <b-tab v-for="category in categories" :key="category.name" :title="category.name">
-	        Im tab {{category.name}}
+        <b-tab @click="emission(category.name)"  v-for="category in categories" :key="category.name" :title="category.name">
         </b-tab>
       </b-tabs>
-    </div>
-    <div v-for="category in categories" :key="category.name">
-      <b-button @click="emission(category.name)">{{category.name}}</b-button>
     </div>
   </div>
 </template>
@@ -29,7 +25,7 @@ export default {
     },
   },
   created() {
-    console.log('navig');
+    this.$emit('category', 'Viande Chaude');
   },
 };
 </script>

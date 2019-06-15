@@ -1882,10 +1882,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     console.log('app');
@@ -1943,7 +1939,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -2336,10 +2331,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2354,7 +2345,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   created: function created() {
-    console.log('navig');
+    this.$emit('category', 'Viande Chaude');
   }
 });
 
@@ -2380,6 +2371,24 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -35055,34 +35064,17 @@ var render = function() {
     { attrs: { id: "App" } },
     [
       _c(
-        "b-row",
+        "b-navbar",
+        { attrs: { toggleable: "sm", type: "light", variant: "light" } },
         [
-          _c(
-            "b-col",
-            { attrs: { cols: "9" } },
-            [
-              _c(
-                "b-navbar",
-                {
-                  attrs: { toggleable: "sm", type: "light", variant: "light" }
-                },
-                [
-                  _c("b-navbar-toggle", {
-                    attrs: { target: "nav-text-collapse" }
-                  }),
-                  _vm._v(" "),
-                  _c("b-navbar-brand", [_vm._v("Friterie Germoir")])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("router-view")
-            ],
-            1
-          )
+          _c("b-navbar-toggle", { attrs: { target: "nav-text-collapse" } }),
+          _vm._v(" "),
+          _c("b-navbar-brand", [_vm._v("Friterie Germoir")])
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("router-view")
     ],
     1
   )
@@ -35141,9 +35133,7 @@ var render = function() {
       _vm._v(" "),
       _c("products", { attrs: { products: _vm.shortList } }),
       _vm._v(" "),
-      _c("router-view", { key: _vm.$route.fullPath }),
-      _vm._v(" "),
-      _c("p", [_vm._v(" prout ")])
+      _c("router-view", { key: _vm.$route.fullPath })
     ],
     1
   )
@@ -35359,56 +35349,30 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "Navigation" },
-    [
-      _c(
-        "div",
-        [
-          _c(
-            "b-tabs",
-            { attrs: { "content-class": "mt-3" } },
-            _vm._l(_vm.categories, function(category) {
-              return _c(
-                "b-tab",
-                { key: category.name, attrs: { title: category.name } },
-                [
-                  _vm._v(
-                    "\n\t        Im tab " + _vm._s(category.name) + "\n        "
-                  )
-                ]
-              )
-            }),
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _vm._l(_vm.categories, function(category) {
-        return _c(
-          "div",
-          { key: category.name },
-          [
-            _c(
-              "b-button",
-              {
-                on: {
-                  click: function($event) {
-                    _vm.emission(category.name)
-                  }
+  return _c("div", { staticClass: "Navigation" }, [
+    _c(
+      "div",
+      [
+        _c(
+          "b-tabs",
+          { attrs: { "content-class": "mt-3" } },
+          _vm._l(_vm.categories, function(category) {
+            return _c("b-tab", {
+              key: category.name,
+              attrs: { title: category.name },
+              on: {
+                click: function($event) {
+                  _vm.emission(category.name)
                 }
-              },
-              [_vm._v(_vm._s(category.name))]
-            )
-          ],
+              }
+            })
+          }),
           1
         )
-      })
-    ],
-    2
-  )
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -35434,7 +35398,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "products" },
+    { staticClass: "products col-12" },
     [
       _c(
         "modal",
@@ -35456,46 +35420,94 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _vm.products
-        ? _c(
-            "div",
-            _vm._l(_vm.products, function(product) {
-              return _c("div", { key: product.name }, [
-                _c(
-                  "button",
-                  {
-                    on: {
-                      click: function($event) {
-                        _vm.showMore(product)
-                      }
-                    }
-                  },
-                  [_vm._v(_vm._s(product.name))]
-                )
-              ])
-            }),
-            0
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c("div", [
-        _vm.order
-          ? _c(
-              "div",
-              _vm._l(_vm.order, function(item) {
-                return _c(
+      _c(
+        "b-row",
+        [
+          _c("b-col", { attrs: { cols: "9" } }, [
+            _vm.products
+              ? _c(
                   "div",
-                  { key: item.name },
-                  [_c("display-order", { attrs: { product: item } })],
+                  [
+                    _c(
+                      "b-row",
+                      _vm._l(_vm.products, function(product) {
+                        return _c(
+                          "div",
+                          { key: product.name },
+                          [
+                            _c(
+                              "b-card",
+                              {
+                                staticClass: "m-1",
+                                on: {
+                                  click: function($event) {
+                                    _vm.showMore(product)
+                                  }
+                                }
+                              },
+                              [
+                                _c("b-card-text", [
+                                  _vm._v(
+                                    "\n                " +
+                                      _vm._s(product.name) +
+                                      "\n              "
+                                  )
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      }),
+                      0
+                    )
+                  ],
                   1
                 )
-              }),
-              0
-            )
-          : _vm._e(),
-        _vm._v(" "),
-        _c("button", { on: { click: _vm.valid } }, [_vm._v("Valider")])
-      ])
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          _c(
+            "b-col",
+            { attrs: { cols: "3" } },
+            [
+              _c("b-jumbotron", { staticClass: "text-center" }, [
+                _c(
+                  "div",
+                  [
+                    _vm.order
+                      ? _c(
+                          "div",
+                          _vm._l(_vm.order, function(item) {
+                            return _c(
+                              "div",
+                              { key: item.name },
+                              [
+                                _c("display-order", {
+                                  attrs: { product: item }
+                                })
+                              ],
+                              1
+                            )
+                          }),
+                          0
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c("b-button", { on: { click: _vm.valid } }, [
+                      _vm._v("Valider")
+                    ])
+                  ],
+                  1
+                )
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      )
     ],
     1
   )
